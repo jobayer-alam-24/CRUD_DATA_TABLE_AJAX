@@ -1,4 +1,5 @@
 using CRUD_DATA_TABLE_AJAX.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +26,10 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Home}/{action=Index}/{id?}").WithStaticAssets();
+app.MapControllerRoute(
+    name: "list",
+    pattern: "{controller=User}/{action=List}/{id?}")
     .WithStaticAssets();
 
 
