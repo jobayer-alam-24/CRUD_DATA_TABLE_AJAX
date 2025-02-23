@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+
 using CRUD_DATA_TABLE_AJAX.Data;
 using CRUD_DATA_TABLE_AJAX.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+
 
 namespace CRUD_DATA_TABLE_AJAX.Controllers
 {
@@ -18,10 +14,15 @@ namespace CRUD_DATA_TABLE_AJAX.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
+        {
+            var users = new List<User>();
+            return View(users);
+        }
+        public async Task<IActionResult> GetAll()
         {
             var users = await _context.User.ToListAsync();
-            return View(users);
+            return Json(users);
         }
         [HttpGet]
         public IActionResult Create()

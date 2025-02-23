@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUD_DATA_TABLE_AJAX")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95028aba7b4c91b91a7b1267bb049a9908435c2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cedd24f5c8a9e742f5454f16cb142fcfddb78dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUD_DATA_TABLE_AJAX")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUD_DATA_TABLE_AJAX")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
